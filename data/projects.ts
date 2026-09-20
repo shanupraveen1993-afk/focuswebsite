@@ -25,22 +25,6 @@ export const selectedProjects: ProjectItem[] = [
     category: "DIGITAL"
   },
   {
-    id: "review-feedback",
-    title: "REVIEW & FEEDBACK",
-    subtitle: "Ground-Level Customer Intelligence",
-    description: "In-person retail feedback system collecting real customer insights at physical touchpoints.",
-    role: "Ground Research & Service Design",
-    category: "MARKET"
-  },
-  {
-    id: "tata-ace-home",
-    title: "TATA ACE → HOME",
-    subtitle: "Showroom-to-Home Logistics",
-    description: "Local delivery business model bridging showroom purchases with last-mile home delivery.",
-    role: "Business Concept & Service Design",
-    category: "BRAND"
-  },
-  {
     id: "skb-pumps",
     title: "SKB PUMPS",
     subtitle: "Industrial Corporate Identity",

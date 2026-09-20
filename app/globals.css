@@ -11,7 +11,7 @@
   --text-primary: #f4f4f6;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
-  --accent-glow: #ffffff;
+  --apple-accent: #ffffff;
 }
 
 * {
@@ -22,12 +22,14 @@ html {
   scroll-behavior: smooth;
   background-color: var(--bg-dark);
   color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-primary);
   overflow-x: hidden;
@@ -35,88 +37,92 @@ body {
 
 h1, h2, h3, h4, .font-display {
   font-family: var(--font-display), var(--font-sans), sans-serif;
+  letter-spacing: -0.025em;
 }
 
-/* Subtle dot texture background */
+/* Subtle Apple-style grid background */
 .bg-grid-texture {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
-/* Glassmorphism Navigation */
+/* Glassmorphism Header */
 .nav-header {
-  background: rgba(10, 10, 12, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border-muted);
+  background: rgba(10, 10, 12, 0.72);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Editorial borders and section separators */
-.editorial-border-b {
-  border-bottom: 1px solid var(--border-muted);
-}
-
-.editorial-border-t {
-  border-top: 1px solid var(--border-muted);
-}
-
-.editorial-border-r {
-  border-right: 1px solid var(--border-muted);
-}
-
-/* Custom interactive pill button */
+/* Apple-inspired Sleek Pill Buttons */
 .pill-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  min-height: 48px;
-  padding: 12px 24px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  gap: 8px;
+  min-height: 46px;
+  padding: 10px 24px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   border-radius: 9999px;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
 }
 
+.pill-button:active {
+  transform: scale(0.96) !important;
+}
+
+/* Primary Apple Pill Button (Crisp White Glow) */
 .pill-button-primary {
-  background-color: #f4f4f6;
+  background: #f4f4f6;
   color: #0a0a0c;
-  border: 1px solid #f4f4f6;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .pill-button-primary:hover {
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
-  transform: translateY(-2px);
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 1);
+  transform: translateY(-2px) scale(1.02);
 }
 
+/* Secondary Apple Pill Button (Glassmorphic Translucent Dark) */
 .pill-button-secondary {
-  background-color: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   color: #f4f4f6;
-  border: 1px solid var(--border-muted);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .pill-button-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: var(--text-secondary);
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Card hover animation */
+/* Editorial Glass Card (Apple-style Rounded Radius) */
 .editorial-card {
   background-color: var(--bg-card);
-  border: 1px solid var(--border-muted);
-  transition: all 0.25s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .editorial-card:hover {
   background-color: var(--bg-card-hover);
-  border-color: var(--border-light);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
 }
 
-/* Scrollbar styling */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
