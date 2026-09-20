@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, MessageCircle, ArrowUpRight, Linkedin, Instagram } from "lucide-react";
+import { Phone, Mail, MessageCircle, ArrowUpRight } from "lucide-react";
 
 export function ContactFooter() {
   const contactOptions = [
@@ -66,8 +66,9 @@ export function ContactFooter() {
         <div className="border-t border-[#27272A] pt-12 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
           <div className="space-y-1">
             <div className="flex items-center gap-3">
-              <span className="font-display font-black text-2xl tracking-tighter text-[#F4F4F6]">
-                FOCUS
+              <span className="font-display font-black text-2xl tracking-tighter text-[#F4F4F6] flex items-baseline gap-1">
+                <span className="text-[#A1A1AA] text-sm font-light">(we)</span>
+                <span>FOCUS</span>
               </span>
               <span className="text-xs font-mono font-bold text-[#71717A] uppercase tracking-widest border-l border-[#27272A] pl-3">
                 BY PRAVEEN
@@ -85,7 +86,7 @@ export function ContactFooter() {
             <span className="text-[#27272A]">|</span>
             <span>TAMIL NADU, INDIA</span>
             <span className="text-[#27272A]">|</span>
-            <span>&copy; {new Date().getFullYear()} FOCUS</span>
+            <span>&copy; {new Date().getFullYear()} (we)FOCUS</span>
           </div>
         </div>
       </div>

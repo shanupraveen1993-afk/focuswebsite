@@ -18,14 +18,15 @@ export function Navigation() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 nav-header">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        {/* Brand Mark */}
+        {/* Brand Mark: (we)FOCUS */}
         <a
           href="#home"
           className="flex items-center gap-2 group"
-          aria-label="FOCUS homepage"
+          aria-label="wefocus.in homepage"
         >
-          <span className="font-display font-black text-xl tracking-tighter text-[#F4F4F6] border border-[#F4F4F6] px-3 py-1 bg-[#0A0A0C] group-hover:bg-[#F4F4F6] group-hover:text-[#0A0A0C] transition-colors duration-200">
-            FOCUS
+          <span className="font-display font-black text-xl tracking-tighter text-[#F4F4F6] border border-[#F4F4F6] px-3.5 py-1 bg-[#0A0A0C] group-hover:bg-[#F4F4F6] group-hover:text-[#0A0A0C] transition-colors duration-200 flex items-baseline gap-1">
+            <span className="text-xs font-medium text-[#A1A1AA] group-hover:text-[#0A0A0C]">(we)</span>
+            <span>FOCUS</span>
           </span>
           <span className="text-xs font-semibold text-[#A1A1AA] hidden sm:inline-block tracking-widest uppercase border-l border-[#27272A] pl-3">
             wefocus.in
@@ -40,7 +41,7 @@ export function Navigation() {
               href={link.href}
               className={`text-xs font-bold tracking-widest uppercase transition-colors duration-200 ${
                 link.label === "LET'S TALK"
-                  ? "bg-[#F4F4F6] text-[#0A0A0C] px-4 py-2 rounded-full hover:bg-white flex items-center gap-1"
+                  ? "bg-[#F4F4F6] text-[#0A0A0C] px-4 py-2 rounded-full hover:bg-white flex items-center gap-1 shadow-sm"
                   : "text-[#A1A1AA] hover:text-[#F4F4F6]"
               }`}
             >
@@ -50,7 +51,7 @@ export function Navigation() {
           ))}
         </nav>
 
-        {/* Mobile Hamburger Button */}
+        {/* Mobile Menu Toggle */}
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -61,7 +62,7 @@ export function Navigation() {
         </button>
       </div>
 
-      {/* Mobile Navigation Drawer */}
+      {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#0A0A0C] border-b border-[#27272A] px-6 py-6 space-y-4">
           {navLinks.map((link) => (
