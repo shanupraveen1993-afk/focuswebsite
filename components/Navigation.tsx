@@ -7,10 +7,9 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "WHERE", href: "#where" },
-    { label: "HOW", href: "#how" },
+    { label: "CAPABILITIES", href: "#capabilities" },
     { label: "WORK", href: "#work" },
-    { label: "IDEAS", href: "#ideas" },
+    { label: "METHOD", href: "#method" },
     { label: "ABOUT", href: "#about" },
     { label: "LET'S TALK", href: "#contact" }
   ];

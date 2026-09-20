@@ -4,80 +4,56 @@ export interface ProjectItem {
   subtitle: string;
   description: string;
   role: string;
-  tags: string[];
+  category: "BRAND" | "MARKET" | "DIGITAL";
 }
 
 export const selectedProjects: ProjectItem[] = [
   {
     id: "tripai",
     title: "TRIPAI",
-    subtitle: "Review-intelligence hotel discovery",
-    description: "Product concept focused on understanding hotels through reviewer mentions rather than only standard amenity filters.",
-    role: "Product / UX / concept development",
-    tags: ["Product Strategy", "Review Intelligence", "UX Architecture"]
+    subtitle: "Review-Intelligence Hotel Discovery",
+    description: "Product concept analyzing hotel mentions across reviewer data instead of static amenity filters.",
+    role: "Product Strategy & UX Architecture",
+    category: "DIGITAL"
   },
   {
     id: "namma-thanjai",
     title: "NAMMA THANJAI",
-    subtitle: "Local digital marketplace",
-    description: "A Thanjavur-focused marketplace covering sales, wanted items, local services, stores and offers.",
-    role: "Product / UX / architecture / growth thinking",
-    tags: ["Marketplace Platform", "UI/UX", "Local Ecosystem"]
+    subtitle: "Regional Digital Marketplace",
+    description: "Local digital ecosystem connecting residents with services, stores, offers, and regional commerce.",
+    role: "Product Architecture & Growth Strategy",
+    category: "DIGITAL"
   },
   {
     id: "review-feedback",
     title: "REVIEW & FEEDBACK",
-    subtitle: "Ground-level customer intelligence",
-    description: "A business concept around collecting authentic customer feedback and reviews in physical retail environments.",
-    role: "Business concept / product / customer research",
-    tags: ["Ground Research", "Customer Insight", "Feedback Systems"]
+    subtitle: "Ground-Level Customer Intelligence",
+    description: "In-person retail feedback system collecting real customer insights at physical touchpoints.",
+    role: "Ground Research & Service Design",
+    category: "MARKET"
   },
   {
     id: "tata-ace-home",
     title: "TATA ACE → HOME",
-    subtitle: "Showroom-to-home delivery",
-    description: "A local logistics and business concept connecting showroom purchases directly with home delivery.",
-    role: "Business concept / service design",
-    tags: ["Service Design", "Logistics Concept", "Local Business"]
-  },
-  {
-    id: "handpicked",
-    title: "HANDPICKED",
-    subtitle: "Curated baby-care commerce",
-    description: "A product and business concept focused on carefully curated baby-care products.",
-    role: "Product / business concept",
-    tags: ["E-Commerce Concept", "Brand Curation", "Product Strategy"]
+    subtitle: "Showroom-to-Home Logistics",
+    description: "Local delivery business model bridging showroom purchases with last-mile home delivery.",
+    role: "Business Concept & Service Design",
+    category: "BRAND"
   },
   {
     id: "skb-pumps",
     title: "SKB PUMPS",
-    subtitle: "Industrial digital presence",
-    description: "Website and digital communication work tailored for an industrial engineering business.",
-    role: "Website / digital",
-    tags: ["Industrial Brand", "Web Architecture", "Corporate Identity"]
+    subtitle: "Industrial Corporate Identity",
+    description: "Digital presence and communication strategy tailored for an industrial engineering enterprise.",
+    role: "Web Architecture & Brand Communication",
+    category: "BRAND"
   },
   {
     id: "hospitality",
-    title: "HOSPITALITY",
+    title: "HOSPITALITY PORTFOLIO",
     subtitle: "Jainisinn Hotel + Sri Krishna Inn",
-    description: "Profile building, conventional marketing and digital marketing across hospitality properties.",
-    role: "Brand / marketing / digital",
-    tags: ["Hospitality Marketing", "Profile Building", "Digital Presence"]
-  },
-  {
-    id: "prana-rehab",
-    title: "PRANA REHAB HOME SERVICE",
-    subtitle: "Home healthcare service",
-    description: "UX, business development and network building for healthcare and rehabilitation service.",
-    role: "UX / business / network",
-    tags: ["Healthcare UX", "Business Development", "Network Growth"]
-  },
-  {
-    id: "abarna-saree",
-    title: "ABARNA SAREE DRAPING",
-    subtitle: "Local service business",
-    description: "Brand positioning, profile building and digital presence for a specialized bridal and local business service.",
-    role: "Business / marketing / digital",
-    tags: ["Local Business", "Positioning", "Digital Marketing"]
+    description: "Profile building, offline presence, and digital marketing for premier hospitality properties.",
+    role: "Brand Positioning & Marketing Strategy",
+    category: "MARKET"
   }
 ];
