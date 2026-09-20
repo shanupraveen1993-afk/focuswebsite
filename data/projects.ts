@@ -1,43 +1,59 @@
-export interface ProjectItem {
+export interface TrackRecordItem {
   id: string;
+  metric: string;
   title: string;
   subtitle: string;
   description: string;
-  role: string;
-  category: "BRAND" | "MARKET" | "DIGITAL";
+  category: "POLITICAL" | "BRAND" | "MARKET" | "DIGITAL";
 }
 
-export const selectedProjects: ProjectItem[] = [
+export const trackRecord: TrackRecordItem[] = [
   {
-    id: "tripai",
-    title: "TRIPAI",
-    subtitle: "Review-Intelligence Hotel Discovery",
-    description: "Product concept analyzing hotel mentions across reviewer data instead of static amenity filters.",
-    role: "Product Strategy & UX Architecture",
-    category: "DIGITAL"
+    id: "political-strategy",
+    metric: "8 CONSTITUENCIES",
+    title: "POLITICAL ELECTION STRATEGY",
+    subtitle: "Campaign & Ground Strategy",
+    description: "Served as political strategist across 8 constituencies — conducting localized research, voter sentiment analysis, ground-level network development, and campaign strategy.",
+    category: "POLITICAL"
   },
   {
-    id: "namma-thanjai",
-    title: "NAMMA THANJAI",
-    subtitle: "Regional Digital Marketplace",
-    description: "Local digital ecosystem connecting residents with services, stores, offers, and regional commerce.",
-    role: "Product Architecture & Growth Strategy",
-    category: "DIGITAL"
-  },
-  {
-    id: "skb-pumps",
-    title: "SKB PUMPS",
-    subtitle: "Industrial Corporate Identity",
-    description: "Digital presence and communication strategy tailored for an industrial engineering enterprise.",
-    role: "Web Architecture & Brand Communication",
+    id: "skb-industries",
+    metric: "SKB PUMPS",
+    title: "INDUSTRIAL BRAND CONSULTING",
+    subtitle: "SKB Industries & Engineering",
+    description: "Brand consultant driving brand positioning, web architecture, and corporate identity for industrial pump manufacturing.",
     category: "BRAND"
   },
   {
-    id: "hospitality",
-    title: "HOSPITALITY PORTFOLIO",
-    subtitle: "Jainisinn Hotel + Sri Krishna Inn",
-    description: "Profile building, offline presence, and digital marketing for premier hospitality properties.",
-    role: "Brand Positioning & Marketing Strategy",
+    id: "hospitality-digital",
+    metric: "2 HOTELS",
+    title: "HOSPITALITY DIGITAL MARKETING",
+    subtitle: "Jainisinn Hotel & Sri Krishna Inn",
+    description: "Executed digital marketing, local profile positioning, guest review management, and online acquisition strategies.",
     category: "MARKET"
+  },
+  {
+    id: "google-business",
+    metric: "8+ ENTERPRISES",
+    title: "GOOGLE BUSINESS & LOCAL SEO",
+    subtitle: "Local Business Optimization",
+    description: "Optimized Google Business Profiles, local search ranking, review intelligence, and digital presence for 8+ regional businesses.",
+    category: "MARKET"
+  },
+  {
+    id: "app-growth",
+    metric: "4+ APPS",
+    title: "APP BRAND & GROWTH MARKETING",
+    subtitle: "Digital Applications (TripAI, Namma Thanjai, etc.)",
+    description: "Brand marketer and growth strategist across 4+ digital applications — managing ASO (App Store Optimization), UI/UX positioning, and acquisition.",
+    category: "DIGITAL"
+  },
+  {
+    id: "business-branding",
+    metric: "4+ BUSINESSES",
+    title: "COMMERCIAL BRAND MARKETING",
+    subtitle: "Business & Growth Strategy",
+    description: "Brand marketer for 4+ commercial businesses — bridging conventional offline presence with digital growth systems.",
+    category: "BRAND"
   }
 ];

@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, MessageCircle, ArrowUpRight } from "lucide-react";
+import { Phone, MessageCircle, ArrowUpRight } from "lucide-react";
 
 export function ContactFooter() {
   const contactOptions = [
@@ -15,12 +15,6 @@ export function ContactFooter() {
       value: "+91 9994837342",
       href: "https://wa.me/919994837342",
       icon: MessageCircle
-    },
-    {
-      label: "Email",
-      value: "praveen@wefocus.in",
-      href: "mailto:praveen@wefocus.in",
-      icon: Mail
     }
   ];
 
