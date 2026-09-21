@@ -16,11 +16,11 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wefocus.in"),
-  title: "FOCUS — Classic Branding. Modern Marketing. Digital Development.",
+  title: "weFOCUS — Classic Branding. Modern Marketing. Digital Development.",
   description:
-    "FOCUS is a multidisciplinary practice built across research, design, products, marketing and business, founded by Praveen.",
+    "weFOCUS is a multidisciplinary practice built across research, design, products, marketing and business strategy.",
   keywords: [
-    "FOCUS",
+    "weFOCUS",
     "Praveen",
     "wefocus.in",
     "Classic Branding",
@@ -35,18 +35,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Praveen", url: "https://wefocus.in" }],
   openGraph: {
-    title: "FOCUS — Classic Branding. Modern Marketing. Digital Development.",
+    title: "weFOCUS — Classic Branding. Modern Marketing. Digital Development.",
     description:
-      "A multidisciplinary practice built across research, design, products, marketing and business, founded by Praveen.",
+      "A multidisciplinary practice built across research, design, products, marketing and business strategy.",
     url: "https://wefocus.in",
-    siteName: "FOCUS",
+    siteName: "weFOCUS",
     locale: "en_US",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "FOCUS — Classic Branding. Modern Marketing. Digital Development.",
-    description: "Founded by Praveen. Connecting research, design, marketing and business."
+    title: "weFOCUS — Classic Branding. Modern Marketing. Digital Development.",
+    description: "Connecting research, design, marketing and business strategy."
   },
   alternates: {
     canonical: "https://wefocus.in"

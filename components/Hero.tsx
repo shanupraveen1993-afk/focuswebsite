@@ -13,34 +13,44 @@ export function Hero() {
         {/* LEFT COLUMN: Executive Copy & Slogans */}
         <div className="lg:col-span-7 order-1 space-y-6">
           <div className="inline-flex items-center gap-2 border border-[#27272A] bg-[#121215] px-3.5 py-1.5 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-[#F4F4F6]"></span>
-            <span className="text-xs font-bold tracking-widest text-[#A1A1AA] uppercase">
-              FOUNDED BY PRAVEEN — wefocus.in
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span className="text-xs font-mono font-bold tracking-widest text-[#A1A1AA] uppercase">
+              wefocus.in — Multidisciplinary Practice
             </span>
           </div>
 
-          <div className="space-y-2">
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black font-display tracking-tight text-[#F4F4F6] leading-none flex items-baseline gap-2">
-              <span className="text-2xl sm:text-4xl lg:text-5xl font-light text-[#A1A1AA]">(we)</span>
-              <span>FOCUS</span>
+          <div className="space-y-4">
+            <h1 className="text-6xl sm:text-8xl lg:text-9xl font-black font-display tracking-tight text-[#F4F4F6] leading-none">
+              weFOCUS
             </h1>
 
-            <div className="space-y-1 pt-1">
-              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-display text-[#F4F4F6] tracking-tight">
-                Classic Branding.
-              </h2>
-              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-display text-[#A1A1AA] tracking-tight">
-                Modern Marketing.
-              </h2>
-              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-display text-[#71717A] tracking-tight">
-                Digital Development.
-              </h2>
+            <div className="space-y-2 pt-1 font-display">
+              <div className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0"></span>
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F4F4F6]">
+                  Classic <span className="text-amber-400 font-black">Branding.</span>
+                </h2>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0"></span>
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F4F4F6]">
+                  Modern <span className="text-emerald-400 font-black">Marketing.</span>
+                </h2>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-indigo-400 shrink-0"></span>
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F4F4F6]">
+                  Digital <span className="text-indigo-400 font-black">Development.</span>
+                </h2>
+              </div>
             </div>
           </div>
 
-          <p className="text-base sm:text-lg text-[#A1A1AA] leading-relaxed max-w-xl">
-            A multidisciplinary practice connecting UX research, digital products, search positioning, branding, and ground-level execution.
-          </p>
+          <div className="editorial-card p-5 rounded-2xl border border-[#27272A] bg-[#121215] max-w-xl">
+            <p className="text-sm sm:text-base text-[#A1A1AA] leading-relaxed">
+              Connecting UX research, digital products, search architecture, branding, and ground-level execution into one unified strategy.
+            </p>
+          </div>
 
           <div className="pt-2">
             <a
