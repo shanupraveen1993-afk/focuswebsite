@@ -4,19 +4,19 @@ import { trackRecord } from "@/data/projects";
 
 export function SelectedWork() {
   return (
-    <section id="work" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[#27272A]">
+    <section id="work" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[#27272A]">
       <div className="space-y-12">
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#27272A] pb-6">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#3F3F46] pb-6">
           <div>
-            <span className="text-xs font-mono font-semibold tracking-widest text-[#71717A] uppercase">
+            <span className="text-xs font-mono font-bold tracking-widest text-[#A1A1AA] uppercase">
               PROVEN TRACK RECORD & WORK
             </span>
-            <h2 className="text-4xl sm:text-6xl font-black font-display text-[#F4F4F6] tracking-tight mt-2">
+            <h2 className="text-4xl sm:text-6xl font-black font-display text-white tracking-tight mt-2">
               SELECTED IMPACT
             </h2>
           </div>
-          <span className="text-xs font-mono text-[#A1A1AA] uppercase">
+          <span className="text-xs font-mono font-bold text-[#E4E4E7] uppercase border border-[#3F3F46] px-3.5 py-1.5 rounded-full bg-[#121215]">
             6 CORE ACCOMPLISHMENTS
           </span>
         </div>
@@ -26,21 +26,21 @@ export function SelectedWork() {
           {trackRecord.map((item) => (
             <article
               key={item.id}
-              className="editorial-card p-7 rounded-3xl flex flex-col justify-between space-y-6 group hover:border-[#52525B] transition-all duration-300"
+              className="bg-[#121215] border border-[#3F3F46] p-7 sm:p-8 rounded-3xl flex flex-col justify-between space-y-6 group hover:border-zinc-400 transition-all duration-300 shadow-xl"
             >
               <div className="space-y-4">
                 {/* Top Badge Line */}
-                <div className="flex items-center justify-between border-b border-[#27272A] pb-3.5">
-                  <span className="text-xs font-mono font-extrabold text-[#F4F4F6] bg-[#18181C] px-3 py-1 rounded-full border border-[#27272A]">
+                <div className="flex items-center justify-between border-b border-[#3F3F46] pb-3.5">
+                  <span className="text-xs font-mono font-extrabold text-white bg-[#18181C] px-3.5 py-1 rounded-full border border-[#3F3F46]">
                     {item.metric}
                   </span>
-                  <span className="text-[10px] font-mono font-bold text-[#71717A] uppercase tracking-wider">
+                  <span className="text-xs font-mono font-bold text-[#A1A1AA] uppercase tracking-wider">
                     {item.category}
                   </span>
                 </div>
 
                 <div className="space-y-1">
-                  <h3 className="text-lg font-bold font-display tracking-tight text-[#F4F4F6] group-hover:text-white">
+                  <h3 className="text-xl font-bold font-display tracking-tight text-white group-hover:text-white">
                     {item.title}
                   </h3>
                   <p className="text-xs font-mono font-semibold text-[#A1A1AA] uppercase">
@@ -48,13 +48,13 @@ export function SelectedWork() {
                   </p>
                 </div>
 
-                <p className="text-sm text-[#A1A1AA] leading-relaxed">
+                <p className="text-sm sm:text-base text-[#E4E4E7] leading-relaxed font-medium">
                   {item.description}
                 </p>
               </div>
 
-              <div className="border-t border-[#27272A] pt-3">
-                <span className="text-[10px] font-mono font-bold text-[#71717A] uppercase tracking-widest">
+              <div className="border-t border-[#3F3F46] pt-3">
+                <span className="text-xs font-mono font-bold text-[#A1A1AA] uppercase tracking-widest">
                   PROVEN EXECUTION
                 </span>
               </div>
