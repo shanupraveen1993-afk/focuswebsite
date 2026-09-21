@@ -39,6 +39,11 @@ h1, h2, h3, h4, .font-display {
   letter-spacing: -0.02em;
 }
 
+.font-hero {
+  font-family: var(--font-hero), var(--font-display), sans-serif;
+  letter-spacing: -0.03em;
+}
+
 /* Subtle Apple-style grid background */
 .bg-grid-texture {
   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);

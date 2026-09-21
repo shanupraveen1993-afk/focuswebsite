@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -11,6 +11,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-display",
+  display: "swap"
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-hero",
   display: "swap"
 });
 
@@ -59,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable} scroll-smooth`}>
+    <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}>
       <body className="bg-[#0A0A0C] text-[#F4F4F6] font-sans antialiased selection:bg-[#F4F4F6] selection:text-[#0A0A0C]">
         {children}
       </body>
