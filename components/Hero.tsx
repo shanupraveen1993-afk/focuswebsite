@@ -24,14 +24,14 @@ export function Hero() {
               weFOCUS
             </h1>
 
-            <div className="space-y-1 pt-1 font-handwriting">
-              <h2 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-snug">
+            <div className="space-y-1 pt-1">
+              <h2 className="font-handwriting text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-snug" style={{ fontFamily: 'var(--font-handwriting), Caveat, cursive' }}>
                 Classic Branding.
               </h2>
-              <h2 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-[#E4E4E7] leading-snug">
+              <h2 className="font-handwriting text-4xl sm:text-6xl lg:text-7xl font-bold text-[#E4E4E7] leading-snug" style={{ fontFamily: 'var(--font-handwriting), Caveat, cursive' }}>
                 Modern Marketing.
               </h2>
-              <h2 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-[#A1A1AA] leading-snug">
+              <h2 className="font-handwriting text-4xl sm:text-6xl lg:text-7xl font-bold text-[#A1A1AA] leading-snug" style={{ fontFamily: 'var(--font-handwriting), Caveat, cursive' }}>
                 Digital Development.
               </h2>
             </div>

@@ -39,8 +39,8 @@ h1, h2, h3, h4, .font-display {
   letter-spacing: -0.02em;
 }
 
-.font-handwriting {
-  font-family: var(--font-handwriting), cursive, sans-serif;
+.font-handwriting, h1.font-handwriting, h2.font-handwriting, h3.font-handwriting {
+  font-family: var(--font-handwriting), "Caveat", cursive, sans-serif !important;
 }
 
 /* Subtle Apple-style grid background */
