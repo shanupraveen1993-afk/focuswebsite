@@ -24,14 +24,14 @@ export function Hero() {
               weFOCUS
             </h1>
 
-            <div className="space-y-2 pt-1 font-hero">
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+            <div className="space-y-1 pt-1 font-handwriting">
+              <h2 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-snug">
                 Classic Branding.
               </h2>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#E4E4E7] leading-tight">
+              <h2 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-[#E4E4E7] leading-snug">
                 Modern Marketing.
               </h2>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#A1A1AA] leading-tight">
+              <h2 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-[#A1A1AA] leading-snug">
                 Digital Development.
               </h2>
             </div>
