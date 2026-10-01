@@ -21,16 +21,16 @@ export function ContactFooter() {
   return (
     <footer id="contact" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="space-y-16">
-        {/* Main CTA Block */}
-        <div className="bg-[#121215] border border-[#27272A] p-8 sm:p-16 rounded-3xl space-y-8 relative overflow-hidden">
+        {/* Main CTA Block - White Card with Black Text */}
+        <div className="bg-white text-[#0A0A0C] border border-zinc-200 p-8 sm:p-16 rounded-3xl space-y-8 relative overflow-hidden shadow-2xl">
           <div className="space-y-4 max-w-3xl">
-            <span className="text-xs font-mono font-semibold tracking-widest text-[#71717A] uppercase">
+            <span className="text-xs font-mono font-bold tracking-widest text-zinc-500 uppercase block">
               11 / CONTACT & ENGAGEMENT
             </span>
-            <h2 className="text-4xl sm:text-6xl lg:text-7xl font-black font-display text-[#F4F4F6] tracking-tight leading-none">
+            <h2 className="text-4xl sm:text-6xl lg:text-7xl font-black font-display text-[#0A0A0C] tracking-tight leading-none">
               HAVE A PROBLEM WORTH SOLVING?
             </h2>
-            <p className="text-base sm:text-xl text-[#A1A1AA] pt-2">
+            <p className="text-base sm:text-xl text-[#3F3F46] pt-2 font-medium">
               Let&apos;s discuss the business, brand, marketing, or digital challenge.
             </p>
           </div>
@@ -45,9 +45,9 @@ export function ContactFooter() {
                   href={opt.href}
                   target={opt.href.startsWith("http") ? "_blank" : undefined}
                   rel={opt.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="pill-button pill-button-primary group"
+                  className="bg-[#0A0A0C] text-white hover:bg-black hover:scale-[1.025] transition-all duration-200 shadow-xl px-6 py-3.5 rounded-full text-xs font-mono font-bold tracking-wider uppercase inline-flex items-center gap-2 group"
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className="w-4 h-4 text-white" />
                   <span>{opt.label}: {opt.value}</span>
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
